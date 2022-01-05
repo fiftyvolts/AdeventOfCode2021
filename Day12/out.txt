@@ -1,0 +1,13 @@
+start(true): iv,lk,zi
+iv(true): FU,lk,start,ca
+lk(true): ca,zi,iv,FU,GC,start
+zi(true): GC,lk,ca,start
+FU(false): end,iv,lk,ca,zv
+ca(true): lk,zi,zv,GC,FU,iv
+GC(false): zi,ky,end,lk,zv,ca
+end(true): zv,FU,GC
+zv(true): end,ca,GC,QQ,FU
+ky(true): GC
+QQ(false): zv
+5252
+147784
